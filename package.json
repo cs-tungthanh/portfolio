@@ -1,8 +1,8 @@
 {
-  "name": "portfolio-tung.github.io",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://portfolio-tung.github.io",
+  "homepage": "https://cs-tungthanh.github.io/portfolio/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
