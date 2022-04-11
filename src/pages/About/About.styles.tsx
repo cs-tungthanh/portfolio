@@ -5,20 +5,22 @@ export const StyledAbout = styled.div`
     height: 100%;
     padding: 10px;
     box-sizing: border-box;
-    .row {
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: row;
+    .chapter-title {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
         align-items: center;
-        width: 100%;
-        height: 100%;
-    }
-    .col{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-basis: 0;
-        max-width: 100%;
+        text-transform: uppercase;
+        font-family: 'Lemon';
+        margin: 5px;
+        padding: 10px 15px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        hr {
+            border: 1px solid #000;
+            flex-grow: 1;
+        }
     }
 `;

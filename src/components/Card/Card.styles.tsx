@@ -1,24 +1,28 @@
 import styled from 'styled-components';
 
 export const StyledCard = styled.div`
-    width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    font-family: "Nunito";
+    font-weight: 400;
+    background-color: #bad1c0;
+    margin: 5px;
     padding: 10px;
-    box-sizing: border-box;
-    .row {
+    .card-header-wrapper {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
         align-items: center;
-        width: 100%;
-        height: 100%;
+        .card-header-title {
+            font-size: 1.2rem;
+            font-weight: 800;
+        }
+        .card-header-icon {
+            font-size: 20px;
+            margin: 5px 10px;
+        }
     }
-    .col{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-basis: 0;
-        max-width: 100%;
+    ul {
+        margin: 0 10px;
     }
 `;

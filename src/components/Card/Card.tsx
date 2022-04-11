@@ -1,18 +1,27 @@
+import React from 'react';
+import { GrContactInfo } from 'react-icons/gr';
 import { StyledCard } from './Card.styles';
 
 type Props = {
-  title: string;
+    title?: string;
+    className?: string;
+    children?: React.ReactNode;
 };
 
-export function CardHeader(): JSX.Element {
-    return <div>Header</div>;
-}
-
-export function Card({ title }: Props): JSX.Element {
+export function Card({ title, className, children }: Props): JSX.Element {
+    const renderHeader = (): JSX.Element => {
+        console.log('render header');
+        return (
+            <div className="card-header-wrapper">
+                <div className="card-header-icon"><GrContactInfo /></div>
+                <div className="card-header-title">{title}</div>
+            </div>
+        );
+    };
     return (
-        <StyledCard>
-            <CardHeader />
-            {title}
+        <StyledCard className={`${className || ''} border`}>
+            {title && renderHeader()}
+            {children}
         </StyledCard>
     );
 }

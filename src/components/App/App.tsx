@@ -1,5 +1,4 @@
 import { About } from '../../pages/About';
-import './App.css';
 import { StyledApp } from './App.styles';
 
 function App(): JSX.Element {

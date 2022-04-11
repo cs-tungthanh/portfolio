@@ -49,7 +49,7 @@ module.exports = {
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'warn',
         'react/prop-types': 'off',
-        'react/jsx-props-no-spreading': 'off',
+        'react/jsx-props-no-spreading': 'warn',
         'spaced-comment': [
             'error',
             'always',
@@ -62,7 +62,7 @@ module.exports = {
         '@typescript-eslint/explicit-module-boundary-types': ['error', { allowArgumentsExplicitlyTypedAsAny: true }],
         '@typescript-eslint/no-non-null-assertion': 'off',
         '@typescript-eslint/no-use-before-define': ['error'],
-        '@typescript-eslint/no-unused-vars': 'error',
+        '@typescript-eslint/no-unused-vars': 'off',
         '@typescript-eslint/no-shadow': 'error',
         'no-continue': 'off',
         'react/require-default-props': 'off',
